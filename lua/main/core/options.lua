@@ -4,6 +4,7 @@ vim.g.mapleader = " "
 local options = vim.o
 
 options.relativenumber = true
+options.number = true
 
 options.tabstop = 4
 options.shiftwidth = 4

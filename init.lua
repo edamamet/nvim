@@ -1,1 +1,1 @@
-require("mini")
+require("main")

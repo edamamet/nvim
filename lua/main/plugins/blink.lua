@@ -27,6 +27,11 @@ return {
         -- See :h blink-cmp-config-keymap for defining your own keymap
         keymap = { preset = 'default' },
 
+        signature = {
+            enabled = true,
+            auto_open = true,
+        },
+
         appearance = {
             -- 'mono' (default) for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
             -- Adjusts spacing to ensure icons are aligned
