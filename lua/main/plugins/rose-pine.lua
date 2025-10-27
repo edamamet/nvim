@@ -11,6 +11,6 @@ return {
         },
     },
     init = function()
-        vim.cmd("color rose-pine")
+        --vim.cmd("color rose-pine")
     end
 }
