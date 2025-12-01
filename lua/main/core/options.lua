@@ -10,6 +10,6 @@ options.tabstop = 4
 options.shiftwidth = 4
 options.expandtab = true
 options.autoindent = true
-options.wrap = true
+options.wrap = false
 
 options.clipboard = "unnamedplus"
