@@ -9,3 +9,11 @@ keymap.set("n", "grD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { desc = 'go to
 keymap.set("n", "grd", "<cmd>lua vim.lsp.buf.definition()<CR>", { desc = 'go to declaration', noremap = true, silent = true })
 
 keymap.set("n", "<Leader>df", "<cmd>lua vim.lsp.buf.format()<CR>", {desc = 'lsp format', noremap = true, silent = true})
+
+keymap.set("n", "<Leader>tn", "<cmd>vertical rightbelow split | terminal<CR>", {
+  desc = "open terminal on right (insert mode)",
+  noremap = true,
+  silent = true,
+})
+
+keymap.set("t", "<Esc>", "<C-\\><C-n>", {})
