@@ -31,7 +31,6 @@ vim.lsp.config('lua_ls', {
 vim.lsp.enable('lua_ls')
 vim.lsp.enable('clangd')
 vim.diagnostic.config({ virtual_text = true })
-vim.keymap.set('n', 'grh', vim.lsp.buf.hover)
 
 -- oil
 vim.pack.add( { 'https://github.com/stevearc/oil.nvim' })
