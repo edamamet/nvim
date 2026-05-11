@@ -32,8 +32,13 @@ vim.lsp.config('lua_ls', {
 vim.lsp.enable('lua_ls')
 vim.lsp.enable('clangd')
 vim.diagnostic.config({ virtual_text = true })
+vim.keymap.set('n', 'gre', function() vim.diagnostic.open_float() end)
 
 -- oil
 vim.pack.add( { 'https://github.com/stevearc/oil.nvim' })
-require('oil').setup()
+require('oil').setup({
+    view_options = {
+        show_hidden = true,
+    },
+})
 vim.keymap.set('n', '-', '<cmd>Oil<cr>')
