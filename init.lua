@@ -11,6 +11,9 @@ vim.cmd("set smarttab")
 
 vim.cmd("set clipboard=unnamedplus")
 
+vim.cmd("map j gj")
+vim.cmd("map k gk")
+
 -- lsp
 vim.pack.add( { 'https://github.com/neovim/nvim-lspconfig' })
 vim.lsp.config('lua_ls', {
