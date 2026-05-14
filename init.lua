@@ -42,3 +42,7 @@ require('oil').setup({
     },
 })
 vim.keymap.set('n', '-', '<cmd>Oil<cr>')
+
+--transparency
+vim.api.nvim_set_hl(0, 'Normal', {bg = 'none'})
+vim.api.nvim_set_hl(0, 'NormalFloat', {bg = 'none'})
