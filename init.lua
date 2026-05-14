@@ -49,3 +49,12 @@ vim.keymap.set('n', '-', '<cmd>Oil<cr>')
 --transparency
 vim.api.nvim_set_hl(0, 'Normal', {bg = 'none'})
 vim.api.nvim_set_hl(0, 'NormalFloat', {bg = 'none'})
+
+-- blink
+vim.pack.add({{
+    src = 'https://github.com/saghen/blink.cmp',
+    version = 'v1'
+}})
+require('blink.cmp').setup({
+    keymap = { preset = 'enter' },
+})
