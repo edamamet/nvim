@@ -56,5 +56,5 @@ vim.pack.add({{
     version = 'v1'
 }})
 require('blink.cmp').setup({
-    keymap = { preset = 'enter' },
+    keymap = { preset = 'default' },
 })
