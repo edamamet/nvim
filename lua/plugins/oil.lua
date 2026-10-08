@@ -4,6 +4,9 @@ return {
     ---@type oil.SetupOpts
     opts = {
         use_default_keymaps = true,
+        view_options = {
+            show_hidden = true,
+        },
     },
     keys = {
         { "-", "<CMD>Oil<CR>", mode = "n", desc = "Oil", },
