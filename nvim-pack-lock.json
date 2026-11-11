@@ -1,9 +1,17 @@
 {
   "plugins": {
+    "avante.nvim": {
+      "rev": "e7a167e5bf7de92d406e371d500c803603ec642f",
+      "src": "https://github.com/yetone/avante.nvim"
+    },
     "blink.cmp": {
       "rev": "78336bc89ee5365633bcf754d93df01678b5c08f",
       "src": "https://github.com/saghen/blink.cmp",
       "version": "'v1'"
+    },
+    "fzf-lua": {
+      "rev": "988416cc782dfe28bff3f0da9b8c943b236cd86a",
+      "src": "https://github.com/ibhagwan/fzf-lua"
     },
     "nvim-lspconfig": {
       "rev": "8f7e64066e2641d5e7d494962a9c7051e3d38dd5",
@@ -12,6 +20,18 @@
     "oil.nvim": {
       "rev": "0fcc83805ad11cf714a949c98c605ed717e0b83e",
       "src": "https://github.com/stevearc/oil.nvim"
+    },
+    "omnisharp-vim": {
+      "rev": "1e1d65e05ad2bd466851246654d28c91864ab2e7",
+      "src": "https://github.com/omnisharp/omnisharp-vim"
+    },
+    "persistence.nvim": {
+      "rev": "b20b2a7887bd39c1a356980b45e03250f3dce49c",
+      "src": "https://github.com/folke/persistence.nvim"
+    },
+    "roslyn.nvim": {
+      "rev": "9c5da79216e5776e020dcc6c157983f5352f3f11",
+      "src": "https://github.com/seblyng/roslyn.nvim"
     }
   }
 }

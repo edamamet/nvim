@@ -14,6 +14,10 @@ vim.cmd("set clipboard=unnamedplus")
 vim.cmd("map j gj")
 vim.cmd("map k gk")
 
+-- roslyn
+vim.pack.add( { 'https://github.com/https://github.com/seblyng/roslyn.nvim' })
+require('roslyn').setup()
+
 -- lsp
 vim.pack.add( { 'https://github.com/neovim/nvim-lspconfig' })
 vim.lsp.config('lua_ls', {
@@ -55,6 +59,30 @@ vim.pack.add({{
     src = 'https://github.com/saghen/blink.cmp',
     version = 'v1'
 }})
-require('blink.cmp').setup({
-    keymap = { preset = 'default' },
-})
+
+require('blink.cmp').setup()
+
+-- fzf
+vim.pack.add({{
+    src = 'https://github.com/ibhagwan/fzf-lua',
+}})
+require('fzf-lua').setup()
+vim.keymap.set('n', '<leader>ff', '<cmd>FzfLua files<cr>')
+vim.keymap.set('n', '<leader>fg', '<cmd>FzfLua git_files<cr>')
+
+-- persistence
+vim.pack.add({{
+    src = 'https://github.com/folke/persistence.nvim',
+}})
+require('persistence').setup()
+-- load the session for the current directory
+vim.keymap.set("n", "<leader>qs", function() require("persistence").load() end)
+
+-- select a session to load
+vim.keymap.set("n", "<leader>qS", function() require("persistence").select() end)
+
+-- load the last session
+vim.keymap.set("n", "<leader>ql", function() require("persistence").load({ last = true }) end)
+
+-- stop Persistence => session won't be saved on exit
+vim.keymap.set("n", "<leader>qd", function() require("persistence").stop() end)
